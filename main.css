@@ -1,0 +1,8 @@
+body,html{margin:0px;padding:0px; font-family: 'Advent Pro', sans-serif; font-weight: 400}
+.nav{background-color: aquamarine;text-align: center;padding: 35px;position: fixed;width: 100%}
+.nav a{text-decoration: none;font-family: 'Advent Pro', sans-serif; font-weight: 300;padding: 0px 12px}
+
+h1,h2,h3,h4{font-family: 'Archivo Black', sans-serif;}
+.hero{background: url(hero.jpg) no-repeat; height:750px;background-size: cover;color: #fff;}
+.contain{padding: 60px 300px;letter-spacing: 1px;}
+.about{text-align: justify;padding: 40px 30px;float: left;width: 50%;}
