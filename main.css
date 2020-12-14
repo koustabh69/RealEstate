@@ -1,8 +1,25 @@
-body,html{margin:0px;padding:0px; font-family: 'Advent Pro', sans-serif; font-weight: 400}
-.nav{background-color: aquamarine;text-align: center;padding: 35px;position: fixed;width: 100%}
-.nav a{text-decoration: none;font-family: 'Advent Pro', sans-serif; font-weight: 300;padding: 0px 12px}
+*{box-sizing: border-box;}
+body,html{margin:0px;padding:0px; font-family: 'Advent Pro', sans-serif; font-weight: 400;scroll-behavior: smooth;}
+.nav{background-color: aquamarine;text-align: center;padding: 30px;position: fixed;width: 100%;z-index: 5;}
+.nav a{text-decoration: none;font-family: 'Advent Pro', sans-serif; font-weight: 300;padding: 0px 12px;}
 
 h1,h2,h3,h4{font-family: 'Archivo Black', sans-serif;}
-.hero{background: url(hero.jpg) no-repeat; height:750px;background-size: cover;color: #fff;}
-.contain{padding: 60px 300px;letter-spacing: 1px;}
-.about{text-align: justify;padding: 40px 30px;float: left;width: 50%;}
+.hero{background: url(hero.jpg) no-repeat; height:850px;background-size: cover;color: #fff;}
+.contain{padding: 60px 300px;}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.col{
+  float: left;  
+}
+.abt2{width: 40.9999%;overflow: hidden;}
+.abt{width: 58.9999%;overflow: hidden;padding: 35px 50px;line-height: 1.6;}
+.abt h1{font-size: 2.5em;}
+.abt p{letter-spacing: 1px;font-size: 1.2em;color: #777;}
+.overlay{position: relative;width: 100%;height: 100%;background-color: rgba(0,0,0,0.6);display: block;}
+.herotxt{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);}
+.serv{width: 33%;height: 350px;padding: 15px;}
+.servcon{width: 100%;height: 100%;background-color: #fff;padding: 25px;}
+.servtxt{width: 100%;height: 100%;border: 1px solid #ccc;}
