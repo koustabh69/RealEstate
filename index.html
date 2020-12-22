@@ -1,43 +1,132 @@
  
 <!DOCTYPE html>
-
+<html lang="en" style="width: 100%;">
 <head>
-    
+    <title>Zayne - Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400&family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/421f97763e.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400&family=Archivo+Black&display=swap" rel="stylesheet">
-    
-<link href="main.css" rel=stylesheet>    
-    <meta content="" >
-    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="main4.css" rel=stylesheet>        
     </head>
 
 <style>
     h1{font-size: 2.5em;}
+
+    .htxt{display: flex;align-items: center;justify-content: center;}
+    .swrap{font-size: 3em;font-weight: bold;height: 80px;overflow: hidden;}
+    .stxt1{animation: swrap 10s cubic-bezier(.3,0,0,.5) infinite;padding: 10px 20px;}
+    .stxt2, .stxt3, .stxt4{padding: 10px 20px;}
+    .swrap i{font-style: normal;color: #FE0000;}
+    .nav .lnk a:hover{color: #FE0000;}
+    @keyframes swrap {
+        0%{margin-top: 0px;}
+        3%{margin-top: 0px;}
+        30%{margin-top: -80px;}
+        33%{margin-top: -80px;}
+        60%{margin-top: -155px;}
+        73%{margin-top: -155px;}
+        90%{margin-top: -230px;}
+        93%{margin-top: -230px;}
+        100%{margin-top: -310px;}
+    }
+    .teamimg2{width: 100%;text-align: center;display: none;}
+    .tmcon{height: 500px;background-color: #FE321E;}
+    .lgo{height: 90px;}
+    .founimg{width: 300px;}
+    .minnav{padding: 15px;display: none;float: right;border: none;background-color: transparent;outline: none;}
+    .dropcon{display: none;position: absolute;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);background-color: #fff;right: 30px;top: 70px;padding: 5px;width: 200px;}
+    .dropcon a{display: block;padding: 12px;}
+    .dropcon a:hover{color: #FE0000;}
+    .minnav:hover{color: #FE0000;outline: #FE0000;}
+    @media only screen and (max-width: 600px){
+        .contain{padding: 50px 10px;}
+        .lgo{height: 50px;}
+        .swrap{font-size: .7em;height: 30px;}
+        .abt h1{font-size: 1.5em;}
+        .abt p{font-size: 1em;}
+        .abt{width: 100%;padding: 35px 20px;}
+        .abt2{display: none;}
+        .serv{width: 100%;height: auto;padding: 15px;text-align: center}
+        .servcon{width: 100%;height: auto;background-color: #fff;padding: 25px;}
+        .servtxt{width: 100%;height: auto;border: 1px solid #ccc;padding: 15px 10px;}
+        .servtxt p{letter-spacing: 1px;color: #777;}
+        .prom{padding: 35px 20px;}
+        .prom h1{font-size: 1.5em;}
+        .prom p{letter-spacing: 1px;font-size: 1em;color: #777;}
+        .team h1{font-size: 1.5em;}
+        .team p{letter-spacing: 1px;font-size: 1em;color: #fff;}
+        .teamtxt{width: 100%; padding: 20px;}
+        .teamimg{width: 100%;text-align: center;display: none;}
+        .teamimg2{width: 100%;text-align: center;display: block;}
+        .tmcon{height: auto;}
+        .founimg{width: 200px;}
+        .contact .col{width: 100%;}
+        .confrm{padding: 0 20px;}
+        .hero{height:400px;}
+        .herotxt{padding: 30px 10px;}
+        .nav .lnk{padding: 10px 0;}
+        .nav .lnk a{font-size: 1em;}
+        @keyframes swrap {
+        0%{margin-top: 0px;}
+        3%{margin-top: 0px;}
+        30%{margin-top: -33px;}
+        33%{margin-top: -33px;}
+        60%{margin-top: -68px;}
+        73%{margin-top: -68px;}
+        90%{margin-top: -95px;}
+        93%{margin-top: -95px;}
+        100%{margin-top: -115px;}
+    }
+    .minnav{display: block;}
+    .lrghd{display: none;}
+    
+    
+    
+    } 
 </style>
 <body>
-    <div class="nav">    
-        <a href="" style="float: left;">LOGO</a>
-        <a href="">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#service">SERVICES</a>
-        <a href="#contact">CONTACT</a>
+    <div class="nav" style="box-shadow: 0px 5px 5px rgba(0,0,0,0.6);background-color: #F7F7F7;">    
+        <a href="" style="" class="lnkimg"><img src="logo4.jpeg" style="" alt="logo" class="lgo">
+        <div class="lnk">
+        <a href="" class="lrghd">Home</a>
+        <a href="#about" class="lrghd">About</a>
+        <a href="#service" class="lrghd">Services</a>
+        <a href="#contact" class="lrghd">Contact</a>
+        <button class="minnav" id="minnav"><i class="fas fa-bars"></i></button>
+        <div class="dropcon" id="dropcon">
+            <a href="">Home</a>
+            <a href="#about">About</a>
+            <a href="#service">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+        </div>
     </div>
     
     <div class="hero" id="home">
         <div class="overlay">
             <div class="herotxt">
-                <h1>Why to choose your organization?</h1>
-                <p style="font-size: 1.4em;letter-spacing: 1px;">Zayne is the answer to all property related requirement for homeowners living away with complete honesty and transerancy</p>
+               <!-- <h1>Why to choose your organization?</h1>
+                <p style="font-size: 1.4em;letter-spacing: 1px;">Zayne is the answer to all property related requirement for homeowners living away with complete honesty and transerancy</p>-->
+                <div class="htxt">
+                    <div class="swrap">
+                        <div class="stxt1">Do you have a <i>property</i> in Assam?</div>
+                        <div class="stxt2">Are you staying away from your <i>property</i>?</div>
+                        <div class="stxt3">Having problems renting your <i>property</i>?</div>
+                        <div class="stxt4">Do you travel frequently to manage your <i>property</i>?</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     
     <div class="contain row" id="about">
         <div class=" col abt2">
-            <img src="aboutus.jpg" style="height: 400px";>
+            <img src="aboutus.jpg" style="height: 400px"; alt="about">
         </div>
         <div class="col abt">
             <h1>About Us</h1>
@@ -53,7 +142,7 @@
             <div class="col serv">
                 <div class="servcon">
                     <div class="servtxt">
-                        <center><div style="height: 100px;width: 100px;border: 1px solid;"></div></center>
+                        <center><div style="height: 100px;width: 100px;"><img src="rent.png" style="height: 100px;" alt="rentlogo"></div></center>
                         <h3>Tenant management</h3>
                         <p>Tenant search, facilitate tenant move-in/out, police verification, legal documentations and society formalities, seamless renewal agreement or tenant replacement</p>
                     </div>
@@ -62,7 +151,7 @@
             <div class="col serv">
                 <div class="servcon">
                     <div class="servtxt">
-                        <center><div style="height: 100px;width: 100px;border: 1px solid;"></div></center>
+                        <center><div style="height: 100px;width: 100px;"><img src="property.png" style="height: 100px;" alt="propertylogo"></div></center>
                         <h3>Property management</h3>
                         <p>Inventory checks both interior & exterior at the time of tenant move-in and exit, minor and regular repair/maintenance, six monthly inspection visits and upkeep of the property, Providing real time video and photos to owners. Vendor management</p>
                     </div>
@@ -71,7 +160,7 @@
             <div class="col serv">
                 <div class="servcon">
                     <div class="servtxt">
-                        <center><div style="height: 100px;width: 100px;border: 1px solid;"></div></center>
+                        <center><div style="height: 100px;width: 100px;"><img src="tenantpng.png" style="height: 100px;" alt="tenantlogo"></div></center>
                         <h3>Rent &amp; Deposit management</h3>
                         <p>Collection of security deposit & monthly rent. Rent transfer, bill payment and society payment. Exit settlement</p>
                     </div>
@@ -89,16 +178,19 @@
         </div>
     </div>
     
-    <div style="height: 500px;background-color: darkblue;">
-        <div class="contain team row">        
+    <div class="tmcon" style="">
+        <div class="contain team row"> 
+            <div class="teamimg2 col">
+                <img src="SIMANTA%20-%20Simanta%20Baishya.jpg" style="" alt="founder" class="founimg">
+            </div>       
             <div class="teamtxt col">
                 <h1>Our Team</h1>
-                <p><b>TEAM LEADER</b></p>
+                <p><b>Founder</b></p>
                 <hr style="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div class="teamimg col">
-                <img src="SIMANTA%20-%20Simanta%20Baishya.jpg" style="width: 300px;">
+                <img src="SIMANTA%20-%20Simanta%20Baishya.jpg" style="" alt="founder" class="founimg">
             </div>
         </div>
     </div>
@@ -118,23 +210,34 @@
             </div>
             <div class="col">
                 <div class="contxt">
-                    <p><i class="fa fa-phone" aria-hidden="true"></i> 99888-83143</p>
-                    <p><i class="fa fa-map-o" aria-hidden="true"></i> address</p>
-                    <p><i class="fa fa-envelope-o" aria-hidden="true"></i> email address</p>
-                    <img src="map.jpg" style="width: 100%;height: 290px;">
+                    <p><i class="fas fa-phone-alt"></i> 99888-83143</p>
+                    <p><i class="far fa-map"></i> DS Mansion, Ground floor, RG Baruah road, Ghy - 781005</p>
+                    <p><i class="fas fa-at"></i> email address</p>
+                    <img src="map.jpg" style="width: 100%;height: 300px;" alt="map">
                 </div>
             </div>
         </div>
     </div>
     <div class="contain2">
         <div class="footer">
+            <div class="slink">
+                <a href=""><i class="fab fa-facebook" style=""></i></a>
+                <a href=""><i class="fab fa-instagram" style=""></i></a>
+                <a href=""><i class="fab fa-twitter" style=""></i></a>
+            </div>
            <p>&copy; 2020 ZAYNE. All rights reserved.</p> 
         </div>
         <div class="btt">
-            <a href="#home"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+            <a href="#home"><center><img src="btt.png" style="height: 40px;" alt="bttlogo"></center></a>
         </div>
     </div>
-
+<script>
+$(document).ready(function() {
+  $('#minnav').click(function() {
+    $("#dropcon").toggle();
+  });
+});
+</script>
 
 </body>
 </html>
